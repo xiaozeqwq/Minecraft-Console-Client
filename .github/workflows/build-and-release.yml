@@ -10,8 +10,8 @@ env:
   PROJECT: "MinecraftClient"
   target-version: "net10.0"
   dotnet-version: "10.0.x"
-  compile-flags: "--self-contained=true -c Release -p:UseAppHost=true -p:IncludeNativeLibrariesForSelfExtract=true -p:EnableCompressionInSingleFile=true -p:DebugType=Embedded -p:PublishSingleFile=true"
-
+  compile-flags: "--self-contained=true -c Release -p:UseAppHost=true -p:IncludeNativeLibrariesForSelfExtract=true -p:IncludeAllContentForSelfExtract=true -p:EnableCompressionInSingleFile=true -p:DebugType=Embedded -p:PublishSingleFile=true"
+  
 jobs:
   determine-build:
     runs-on: ubuntu-slim
